@@ -39,6 +39,22 @@ async function promptUser() {
             message: 'Enter Contributors:',
         },
         {
+            type: 'list',
+            name: 'license',
+            message: 'Pick a License',
+            choices: [
+                { title: 'MIT License', value: 'MIT' },
+                { title: 'GNU AGPLv3', value: 'AGPLv3' },
+                { title: 'GNU GPLv3', value: 'GPLv3' },
+                { title: 'GNU LGPLv3', value: 'LGPLv3' },
+                { title: 'Mozilla Public License 2.0', value: 'MPL2.0' },
+                { title: 'Apache License 2.0', value: 'Apache2.0' },
+                { title: 'Boost Software License 1.0', value: 'BSL1.0' },
+                { title: 'The Unlicense', value: 'Unlicense' },
+              ],
+            initial: 1
+        },
+        {
             type: 'input',
             name: 'tests', 
             message: 'Enter Tests:',
@@ -58,7 +74,7 @@ async function promptUser() {
 
 function generateReadMe (data) {
      return `
-##${data.title}
+## ${data.name}
 
 ## Description
 ${data.description}
@@ -71,7 +87,7 @@ ${data.usage}
 
 
 ## Contributing
-${data.contributing}
+${data.Contributing}
 
 ## License
 ${data.license}
@@ -87,12 +103,15 @@ ${data.questions}
 }
 
 
-function writeToFile(fileName, readmeContent) {
-    fs.writeFile(fileName, readmeContent, (err) =>
-    err ? console.log(err) : console.log('Success!')
-    );
+async function init() {
+    try {
+        const data = await promptUser();
+        const readMe = generateReadMe(data);
+        fs.writeFileSync('README.md', readMe);
+        console.log('Successfully wrote to README.md');
+    } catch (error) {
+        console.log(error);
+    }
 }
-
-function init() {}
 
 init();
