@@ -1,5 +1,5 @@
 
-## Application
+## Readme Generator
 
 ## Table of Contents
 - [Description](#Description)
@@ -11,18 +11,17 @@
 - [Questions](#Questions)
 
 ## Description
-Descr.
+A basic readme Generator.
 
 ## Installation
-Install Instruction.
+Install Instr.
 
 ## Usage
-Usage
-video: https://drive.google.com/file/d/1EsmEB_QnO0k-pu58ghm6Cu4g4B2oQdjr/view?usp=sharing
+Usage Video: https://drive.google.com/file/d/1FJ0ZwgIxFptotsXJbnQBa_vG95ll4JHv/view?usp=sharing
 
 
 ## Contributing
-Contr.
+contr.
 
 ## License
 MIT
