@@ -20,11 +20,6 @@ async function promptUser() {
         },
         {
             type: 'input',
-            name: 'Table of Contents', 
-            message: 'List table of contents:',
-        },
-        {
-            type: 'input',
             name: 'installation', 
             message: 'Enter Installation Instructions:',
         },
@@ -62,7 +57,12 @@ async function promptUser() {
         {
             type: 'input',
             name: 'questions', 
-            message: 'Enter Questions:',
+            message: 'Enter Github Username:',
+        },
+        {
+            type: 'input',
+            name: 'email', 
+            message: 'Enter Email:',
         }
     ]);
 
@@ -75,6 +75,15 @@ async function promptUser() {
 function generateReadMe (data) {
      return `
 ## ${data.name}
+
+## Table of Contents
+- [Description](#Description)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contribution](#Contribution)
+- [Tests](#Tests)
+- [Questions](#Questions)
 
 ## Description
 ${data.description}
@@ -95,8 +104,12 @@ ${data.license}
 ## Tests
 ${data.tests}
 
-## Questions
-${data.questions}
+## Questions?
+Feel free to reach out with any questions!
+
+Github: ${data.questions}
+
+Email: ${data.email}
 
 `;
 
@@ -108,7 +121,7 @@ async function init() {
         const data = await promptUser();
         const readMe = generateReadMe(data);
         fs.writeFileSync('README.md', readMe);
-        console.log('Successfully wrote to README.md');
+        console.log('Successfully generated README.md!');
     } catch (error) {
         console.log(error);
     }
