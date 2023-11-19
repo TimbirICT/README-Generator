@@ -18,7 +18,7 @@ A basic readme Generator.
 Simply run 'node index.js' in the terminal to execute the readme generator.
 
 ## Usage
-Usage Video: https://drive.google.com/file/d/1FJ0ZwgIxFptotsXJbnQBa_vG95ll4JHv/view?usp=sharing
+Usage Video: [Video](https://drive.google.com/file/d/1FJ0ZwgIxFptotsXJbnQBa_vG95ll4JHv/view?usp=sharing)
 
 
 ## Contributing
