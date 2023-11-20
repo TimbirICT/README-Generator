@@ -75,6 +75,7 @@ async function promptUser() {
 function generateReadMe (data) {
      return `
 ## ${data.name}
+[![License: ${data.license}](https://img.shields.io/badge/License-${data.license}-yellow.svg)](https://opensource.org/licenses/${data.license})
 
 ## Table of Contents
 - [Description](#Description)
@@ -99,7 +100,7 @@ ${data.usage}
 ${data.Contributing}
 
 ## License
-${data.license}
+This application is covered by the ${data.license} license.
 
 ## Tests
 ${data.tests}

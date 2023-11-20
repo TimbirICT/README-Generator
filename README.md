@@ -1,5 +1,5 @@
 
-## Readme Generator
+## Application
 
 ## Table of Contents
 - [Description](#Description)
@@ -9,36 +9,30 @@
 - [Contribution](#Contribution)
 - [Tests](#Tests)
 - [Questions](#Questions)
-- [Sources](#Sources)
 
 ## Description
-A basic readme Generator.
+Descrption
 
 ## Installation
-Simply run 'node index.js' in the terminal to execute the readme generator.
+Install Instruction
 
 ## Usage
-Usage Video: https://drive.google.com/file/d/1FJ0ZwgIxFptotsXJbnQBa_vG95ll4JHv/view?usp=sharing
+Usage
 
 
 ## Contributing
-N/A
+Contributors
 
 ## License
-MIT
+GPLv3
 
 ## Tests
-N/A
+Tests
 
 ## Questions?
 Feel free to reach out with any questions!
 
-Github: [Github](https://github.com/TimbirICT)
+Github: Github Username
 
-Email: tmiddlebrooks99@gmail.com
+Email: Email@email.com
 
-## Sources
-
-Dylan Osborn (TA)
-W3schools.com
-StackOverflow.com
