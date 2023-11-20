@@ -1,6 +1,6 @@
 
 ## Application
-
+[![License: GPLv3](https://img.shields.io/badge/License-GPLv3-yellow.svg)](https://opensource.org/licenses/GPLv3)
 ## Table of Contents
 - [Description](#Description)
 - [Installation](#Installation)
