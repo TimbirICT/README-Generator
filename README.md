@@ -18,6 +18,7 @@ Install Instruction
 
 ## Usage
 Usage
+Usage Video: [Video](https://drive.google.com/file/d/1FJ0ZwgIxFptotsXJbnQBa_vG95ll4JHv/view?usp=sharing)
 
 
 ## Contributing
